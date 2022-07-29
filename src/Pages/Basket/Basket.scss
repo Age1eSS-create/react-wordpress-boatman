@@ -1,0 +1,368 @@
+.Basket {
+    background-color: #fff;
+    padding: 100px 0;
+    .main-basket {
+        background-color: #fff;
+        color: black;
+        padding-bottom: 100px;
+        .main-basket__title {
+            margin-bottom: 50px;
+            font-family: 'RoadRadio';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 42px;
+        }
+        .main-basket__accessor {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .main-basket__foot {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .main-basket__form {
+                display: flex;
+                align-items: center;
+                input {
+                    width: 335px;
+                    padding: 20px;
+                    background: #F8F8F8;
+                    margin-right: 10px;
+                }
+                .main-basket__button {
+                    padding: 20px 55px;
+                    background: #E60013;
+                    color: white;
+                }
+            }
+            .main-basket__price {
+                 display: flex;
+                 flex-direction: column;
+                 align-items: flex-end;
+                 h3 { 
+                    font-family: 'RoadRadio';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 130%;
+                 }
+                 .main-basket__numbers {
+                    display: flex;
+                    align-items: flex-end;
+                    .main-basket__sale {
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;                
+                        letter-spacing: 0.04em;
+                        color: #717171;
+                        text-decoration: line-through;
+                        margin-right: 25px;
+                    }
+                    .main-basket__main {
+                        font-family: 'RoadRadio';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 32px;
+                    }
+                 }
+            }
+        }
+    }
+    .buy-basket  {
+        background: #F8F8F8;
+        padding: 100px 0 100px 0;
+        color: black;
+        .main-buy {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            .main-buy__info {
+                display: flex;
+                flex-direction: column;
+                background: #FFFFFF;
+                padding: 40px 30px;
+                height: fit-content;
+                h2 {
+                    font-family: 'RoadRadio';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+                input {
+                    width: 393px;
+                    height: 59px;
+                    background: #F8F8F8;
+                    padding: 20px 60px 20px 20px;
+                    margin-bottom: 20px;
+                }
+                textarea {
+                    padding: 20px;
+                    background: #F8F8F8;
+                    max-width: 393px;
+                    max-height: 144px;
+                    min-width: 393px;
+                    min-height: 144px;
+                }
+            }
+            .delivery-buy {
+                display: flex;
+                flex-direction: column;
+                background: #FFFFFF;
+                padding: 40px 30px;
+                height: fit-content;
+                .delivery-buy__title {
+                    font-family: 'RoadRadio';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+                select {
+                    background: #F8F8F8;
+                    width: 393px;
+                    height: 39px;
+                    border: 1px white solid;
+                    // padding: 20px 60px 20px 20px;
+                    margin-bottom: 20px;
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    /* identical to box height */
+                    
+                    letter-spacing: 0.04em;
+                }
+                select::-webkit-input-placeholder  {
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    /* identical to box height */
+                    
+                    letter-spacing: 0.04em;
+                    
+                    color: #8C8C8C;
+                }
+                .delivery-buy__types {
+                    .item-delivery {
+                        border-bottom: 1px solid #C4C4C4;
+                        padding: 20px 0;
+                        &:first-child {
+                            border-top: 1px solid #C4C4C4;
+                        }
+                        .item-delivery__head {
+                            display: flex;
+                            align-items: center;
+                            
+                            .mainCheck {
+                                border-radius: 100%;
+                                width: 22px;
+                                height: 22px;
+                                border: 1px solid black;
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                div {
+                                    border-radius: 100%;
+                                    width: 14px;
+                                    height: 14px;
+                                    // border: 1px solid black;
+                                    cursor: pointer;
+                                }
+                            }
+                            h2 {
+                                font-family: 'RoadRadio';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 130%;
+                                color: #717171;
+                                margin-left: 20px;
+                                max-width: 351px;
+                            }
+                        }
+                        .item-delivery__location {
+                            font-family: 'SF Pro Display';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 140%;
+                            letter-spacing: 0.04em;
+                            text-decoration-line: underline;
+                            color: #003366;
+                            margin-top: 5px;
+                            cursor: pointer;
+                            padding: 0 20px;
+                        }
+                        .item-delivery__address {
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 20px;
+                            max-width: 353px;
+                            h2 {
+                                margin-bottom: 20px;
+                                font-family: 'SF Pro Display';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 140%;
+                                /* or 22px */
+                                
+                                letter-spacing: 0.04em;
+                            }
+                            .input-street {
+                                width: 353px;
+                                height: 59px;
+                                background: #F8F8F8;
+                                padding: 20px 60px 20px 20px;
+                                margin-bottom: 20px;
+                            }
+                            div {
+                                display: flex;
+                                margin-bottom: 20px;
+                                input {
+                                    background: #F8F8F8;
+                                    padding: 20px 60px 20px 20px;
+                                    width: 166px;
+                                    height: 59px;
+                                    &:not(:last-child) {
+                                        margin-right: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .item-delivery__deadlines {
+                            display: flex;
+                            align-items: center;
+                            margin-top: 45px;
+                            justify-content: space-between;
+                            margin-left: 40px;
+                            .deadlines__text {
+                                font-family: 'SF Pro Display';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 140%;
+                                letter-spacing: 0.04em;   
+                                color: #717171;
+                            }
+                            .deadlines__number {
+                                font-family: 'RoadRadio';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 130%;
+                                color: #717171;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+            .bank-buy {
+                background: #FFFFFF;
+                padding: 40px 30px;
+                height: fit-content;
+                .bank-buy__title {
+                    font-family: 'RoadRadio';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+                .bank-buy__list {
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    margin-bottom: 20px;
+                    .active-buy-item {
+                        border: 1px solid #E60013;
+                        color:  black !important;
+                    }
+                    .bank-buy__item {
+                        cursor: pointer;
+                        width: 190px;
+                        height: 134px;
+                        background: #F8F8F8;
+                        // border: 1px solid #E60013;
+                        color: #8C8C8C;
+                        padding: 20px;
+                        p {
+                            font-family: 'SF Pro Display';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 19px;
+                            letter-spacing: 0.04em;
+                            max-width: 115px;
+                        }
+                        svg {
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+                .bank-buy__button {
+                    cursor: pointer;
+                    padding: 20px 130px ;
+                    background: #C4C4C4;
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    /* or 22px */
+                    
+                    letter-spacing: 0.04em;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+        } 
+        .conditions-buy {
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .conditions-buy__item {
+                padding: 0 30px;
+                width: 453px;
+                height: 104px;
+                background: #FFFFFF;
+                display: flex;
+                align-items: center;
+                svg {
+                    width: 44px;
+                    margin-right: 8px;
+                }
+                .small-svg {
+                    width: 65px;
+                }
+                p {
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    /* or 22px */
+                    
+                    letter-spacing: 0.04em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.Accessories {
+    background-color: #fff;
+    color: black;
+    padding: 100px 0;
+    .Accessories_container {
+        margin: 0 auto;
+        max-width: 1461px;
+        .Accessories__title {
+            font-family: 'RoadRadio';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 42px;
+            margin-bottom: 30px;
+        }
+        .tabs-accessor {
+            display: flex;
+            margin-bottom: 50px;
+            .tabs-accessor__item {
+                padding: 8px 30px;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                border: 1px solid #D2D2D7;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: all 1s;
+                &:hover {
+                    background: #E60013;
+                    color: white;
+                    // border: none;
+                }
+                &:not(:last-child) {
+                    margin-right: 20px;
+
+                }
+            }
+        }
+        .content-accessor {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 100px 0px;
+        }
+    }
+}

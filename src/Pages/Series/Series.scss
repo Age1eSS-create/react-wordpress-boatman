@@ -1,0 +1,418 @@
+.Series {
+    overflow: hidden;
+    .series__main {
+        position: relative;
+        // min-height: 80vh;
+        overflow: hidden;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px -15px 56px 131px rgb(0 0 0 / 66%) inset;
+        .main__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+            .main-info-series {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+            }
+            .info-name {
+                font-family: 'RoadRadio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 74px;
+                line-height: 75px;
+                text-transform: uppercase;
+            }
+            .info-subtitle {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                margin-bottom: 30px;
+                max-width: 337px;
+            }
+            .info-button {
+                cursor: pointer;
+                padding: 20px 78px;
+                text-align: center;
+                background: #E60013;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+        img {
+            position: absolute;
+            width: inherit;
+            // height: inherit;
+            z-index: -1;
+            filter: brightness(90%)
+        }
+    }
+    .info-series {
+        background-color: #0C1217;
+        padding: 100px 0;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 110%;
+            height: 161px;
+            background-color: #0c0c0c;
+            filter: blur(26px);
+            top: -65px;
+            left: -20px;
+        }
+        .info-series__container {
+            display: flex;
+            justify-content: space-between;
+            .info-item {
+                width: 320px;
+                height: 190px;
+                padding-left: 50px;
+                background: #1D242A;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // align-items: center;
+                align-content: center;
+                // text-align: centerp
+                position: relative;
+                .info-item__number {
+                    font-family: 'RoadRadio';
+                    font-style: normal;
+                    font-weight: 100;
+                    font-size: 100px;
+                    line-height: 101px;
+                    /* identical to box height */
+
+                    text-transform: uppercase;
+                    span {
+                        font-size: 40px;
+                        position: absolute;
+                        bottom: 36px;
+                        margin-left: 10px;
+                    }
+                }
+                p {
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    /* identical to box height */
+
+                    letter-spacing: 0.04em;
+
+                    color: #8C8C8C;
+                }
+            }
+        }
+    }
+    .table-series {
+        background-color: #0C1217;
+        padding-bottom: 100px;
+        .table-series__container {
+            .table-series__title {
+                text-align: center;
+                font-family: 'RoadRadio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 42px;
+                line-height: 42px;
+                text-align: center;
+                padding-bottom: 60px;
+            }
+        }
+    }
+    .video-series {
+        position: relative;
+        // min-height: 80vh;
+        overflow: hidden;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            cursor: pointer;
+        }
+        img {
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            z-index: -1;
+            // filter: brightness(90%)
+        }
+    }
+
+    .many_margin {
+        padding-top: 95px !important;
+    }
+
+    .corpus-series {
+        .corpus-series__container {
+            position: relative;
+        }
+        padding: 200px 0 0px 0;
+        background-color: #fff;
+        color: black;
+
+        .corpus-series__info {
+            max-width: 495px;
+            margin-bottom: 100px;
+            .corpus-series__title {
+                font-family: 'RoadRadio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 36px;
+                margin-bottom: 15px;
+            }
+            .corpus-series__text {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                /* or 22px */
+
+                letter-spacing: 0.04em;
+            }
+        }
+    }
+    .series__exo {
+        height: 560px;
+        // background-color: #fff;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        .exo-series__info-sh {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 650px;
+                height: 300px;
+                background-color: rgba(0, 0, 0, 0.31);
+                filter: blur(40px);
+                border-radius: 20%;
+                top: -150px;
+                box-shadow: -88px -58px 49px 9px rgba(34, 60, 80, 0.58);
+                z-index: -1;
+
+            }
+        }
+        .shadow_content {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 650px;
+                height: 300px;
+                background-color: rgba(0, 0, 0, 0.19);
+                filter: blur(40px);
+                border-radius: 20%;
+                top: -25px;
+                // box-shadow: -88px -58px 49px 9px rgba(34, 60, 80, 0.58);
+                z-index: -1;
+
+            }
+            
+        }
+        .exo-series__info {
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            .exo-series__title {              
+                font-family: 'RoadRadio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 42px;
+                line-height: 42px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            .exo-series__subtitle {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                /* or 22px */
+                
+                text-align: center;
+                letter-spacing: 0.04em;
+                max-width: 510px;
+                margin-bottom: 30px;
+                
+            }
+            .exo-series__button {
+                padding: 20px 60px;
+                background: #E60013;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+        img {
+            position: absolute;
+            width: inherit;
+            top: 0;
+            height: inherit;
+            z-index: -1;
+            filter: brightness(60%) 
+        }
+        .auto-img {
+            filter: brightness(95%) 
+        }
+    }
+    .nav {
+        display: flex;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        .nav__item {
+            cursor: pointer;
+            padding-bottom: 12px;
+            padding-right: 12px;
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            /* or 22px */
+            border-bottom: 1px grey solid;
+            letter-spacing: 0.04em;
+            &:hover {
+                border-bottom: 2px red solid;
+            }
+            
+        }
+        .nav-item-active {
+            border-bottom: 2px red solid;
+        }
+    }
+
+    .button{
+        cursor: pointer;
+        margin-top: 0px !important;
+        color: white;
+        background: #E60013;
+        width: 235px;
+        height: 59px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .button-pult {
+        margin-top: 40px !important;
+    }
+    .products-series {
+        background-color: #fff;
+        color: black;
+        .products-series_container {
+            margin: 0 auto;
+            max-width: 1557px;
+
+        }
+        .products-series__title {
+            text-align: center;
+            font-family: 'RoadRadio';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 42px;
+            margin-bottom: 50px;
+        }
+        .products-series__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    .models-series {
+        padding-top: 100px;
+        .models__container {
+            margin: 0 auto;
+            max-width: 1557px;
+        }
+        .content-models {
+
+        }
+        .content-models__item {
+            width: 496px;
+            height: 507px;
+        }
+        .models-item-1 {
+            &::before {
+                content: '';
+                position: absolute;
+                top: -50px;
+                left: 10px;
+                background: url('../../img/cor1.png') no-repeat;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+        }
+        .models-item-2 {
+            &::before {
+                content: '';
+                position: absolute;
+                top: -20pxpx;
+                left: 0px;
+                background: url('../../img/cor2.png') no-repeat;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+        }
+        .models-item-3 {
+            &::before {
+                content: '';
+                position: absolute;
+                top: -50px;
+                left: 0;
+                background: url('../../img/cor3.png') no-repeat;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+        }
+        .models-item-4 {
+            &::before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: 0;
+                background: url('../../img/cor4.png') no-repeat;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+        }
+    }
+}

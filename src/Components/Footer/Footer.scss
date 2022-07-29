@@ -1,0 +1,109 @@
+.Footer__container {
+    a {
+        display: block;
+    }
+    padding: 80px 0;
+    .Footer__header {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        .footer__socials {
+            display: flex;
+            align-items: center;
+            margin-left: 58%;
+            svg {
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    .Footer__content {
+        margin-top: 40px;
+        display: flex;
+        .content__location {
+            .location__number {
+                font-family: 'RoadRadio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 40px;
+                margin-bottom: 40px;
+            }
+            .location__email {
+                margin-bottom: 37px;
+                .email {
+                    font-family: 'RoadRadio';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                }
+                .text {
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 140%;
+                    /* or 22px */
+
+                    letter-spacing: 0.04em;
+                    text-decoration-line: underline;
+                }
+            }
+            .location__map {
+                .map__address {
+                    font-family: 'RoadRadio';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                }
+                img {
+                    width: 85%;
+                }
+            }
+        }
+        .sale {
+            &:not(:last-child) {
+                margin-right: 100px;
+            }
+            .dopStyle {
+                margin-top: 50px !important;
+            }
+            .title {
+                font-family: 'RoadRadio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 20px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            .list {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 50px;
+                a {
+                    color: white;
+                    margin-bottom: 10px;
+                }
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .subtitle {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

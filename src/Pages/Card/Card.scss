@@ -1,0 +1,468 @@
+.Card {
+    background-color: #fff;
+    color: black;
+    padding: 100px 0 0 0;
+    .button  {
+        margin: 0 !important;
+    }
+    .main-card {
+        .main-card_container {
+            margin: 0 auto;
+            max-width: 1448px;
+            display: flex;
+            position: relative;
+            transition: all 2s;
+            .images-card {
+                margin-right: 20px;
+                position: sticky !important;
+                top: 0px;
+                // z-index: -1;
+                .images-card__main {
+                    background: #424242;
+                    width: 610px;
+                    height: 500px;
+                    margin-bottom: 10px;
+                }
+                .list-images {
+                    display: flex;
+                    align-items: center;
+                    .list-images__item {
+                        width: 114px;
+                        height: 110px;
+                        background: #242424;
+                        &:not(:last-child) {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .info-card {
+                // margin-left: 47%;
+
+                .info-card__head {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .info-card__title {
+                        font-family: 'RoadRadio';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 32px;
+                        max-width: 457px;
+                    }
+                    .rating {
+                        .rating__stars {
+                            display: flex;
+                            margin-bottom: 10px;
+                            svg {
+                                &:not(:last-child) {
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                        .rating__link {
+                            cursor: pointer;
+                            font-family: 'SF Pro Display';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 140%;
+                            /* or 22px */
+
+                            letter-spacing: 0.04em;
+                            text-decoration-line: underline;
+
+                            color: #003366;
+                        }
+                    }
+                }
+                .info-card__desc {
+                    margin-bottom: 20px;
+                    max-width: 680px;
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    /* or 22px */
+
+                    letter-spacing: 0.04em;
+                }
+                .info-card__link { 
+                    cursor: pointer;
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 140%;
+                    /* or 22px */
+
+                    letter-spacing: 0.04em;
+                    text-decoration-line: underline;
+
+                    color: #003366;
+                }
+                .info-card__complect {
+                    margin: 30px 0;
+                    .complect-card__title {
+                        margin-bottom: 10px;
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        /* or 22px */
+
+                        letter-spacing: 0.04em;
+
+                        color: #717171;
+                    }
+                    .complect-list {
+                        display: flex;
+                        .item-active {
+                            border: 2px black solid !important;
+                        }
+                        .complect-list__item {
+                            cursor: pointer;
+                            width: 165px;
+                            height: 100px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            border: 2px grey solid;
+                            &:not(:last-child) {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+                .info-card__color {
+                    margin-bottom: 118px;
+                    .card__color__title {
+                        margin-bottom: 10px;
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        /* or 22px */
+
+                        letter-spacing: 0.04em;
+
+                        color: #717171;
+                    }
+                    .card__color__list {
+                        display: flex;
+                        .card__color__item  {
+                            padding: 0 20px;
+                            cursor: pointer;
+                            width: 165px;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            // justify-content: center;
+                            border: 2px black solid;
+                            &:not(:last-child) {
+                                margin-right: 10px;
+                            }
+                            .color {
+                                width: 26px;
+                                height: 26px;
+                                border-radius: 50%;
+                                background-color: #000;
+                                margin-right: 10px;
+                            }
+                            .text {
+                                font-family: 'RoadRadio';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                }
+                .info-card__price {
+                    .card__price__numbers {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        p {
+                            font-family: 'RoadRadio';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 32px;
+                            line-height: 32px;
+                            &:not(:last-child) {
+                                margin-right: 10px;
+                            }
+                        }
+                        .numbers__line {
+                            text-decoration: line-through;  
+                            font-family: 'SF Pro Display';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 140%;
+                            /* or 22px */
+
+                            letter-spacing: 0.04em;
+
+                            color: #717171;
+                        }
+                    }
+                    .card__price__buttons {
+                        display: flex;
+                        align-items: center;
+                        .card__price__button {
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            padding: 20px 30px;
+                            border: 1px black solid;
+                            margin-right: 20px;
+                            svg {
+                                margin-left: 10px;
+                            }
+                        }
+                        .card__price__button-red {
+                            border: none;
+                            padding: 20px 90px;
+                            background: #E60013;
+                            color: white;
+                            margin-right: 10px;
+                        }
+                        .card__price-comp {
+                            cursor: pointer;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            svg {
+                                margin-bottom: 6px;
+                            }
+                            p {
+                                font-family: 'SF Pro Display';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 14px;
+                                letter-spacing: 0.04em;
+                            }
+                        }
+                    }
+                }
+                .info-card__table {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 90px;
+                    margin-bottom: 20px;
+                    .table-card__item {
+                        height: 65px;
+                        width: 358px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-bottom: 1px grey solid;
+                        margin-right: 20px;
+                        .table-card__title {
+                            font-family: 'SF Pro Display';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 140%;
+                            /* or 22px */
+
+                            letter-spacing: 0.04em;
+
+                            color: #717171;
+                        }
+                        .table-card__text {
+                            font-family: 'SF Pro Display';
+                            text-transform: lowercase;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .info-card__select {
+                    border-bottom: 1px solid black;
+                    padding-bottom: 20px;
+                    margin-top: 20px;
+                    .title-true {
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                    }
+                    .select-card__title {
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 140%;
+                        /* or 22px */
+
+                        letter-spacing: 0.04em;
+                    }
+                    .select-card__list-false {
+                        display: none;
+                    }
+                    .select-card__list-true {
+                        margin: 5px 10px;
+                        .select-card___item {
+                            font-family: 'SF Pro Display';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 140%;
+                            /* or 22px */
+
+                            letter-spacing: 0.04em;
+
+                            color: #717171;
+                        }
+                    }
+                }
+                .info-card__set {
+                    margin-top: 100px;
+                    .set-card__title {
+                        font-family: 'RoadRadio';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 36px;
+                        margin-bottom: 10px;
+                    }
+                    .set-card__list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 0 22px;
+                        .set-item {
+                            width: 350px;
+                            height: 100px;
+                            border: 1px grey solid;
+                            margin-right: 20px;
+                            display: flex;
+                            align-items: center;
+                            margin-top: 20px;
+                            p {
+                                display: flex;
+                                flex-direction: column;
+                                
+                                font-family: 'RoadRadio';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 16px;
+                                a {
+                                    font-family: 'SF Pro Display';
+                                    font-style: normal;
+                                    font-weight: 600 !important;
+                                    font-size: 16px;
+                                    line-height: 140%;
+                                    /* or 22px */
+                                    margin-top: 10px;
+                                    letter-spacing: 0.04em;
+                                    text-decoration-line: underline;
+
+                                    color: #003366;
+                                }
+                            }
+                            img {
+                                width: 65px;
+                                height: 65px;
+                                margin-right: 10px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .access-card {
+        background-color: #fff;
+        z-index: 2;
+        margin: 100px 0;
+        .access-card_container {
+            margin: 0 auto;
+            max-width: 1548px;
+            .access-card__title {
+                font-family: 'RoadRadio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 42px;
+                line-height: 42px;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            .access-card__content {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    .rewiew-card {
+        margin-top: 100px;
+        .rewiew-card_container {
+            margin: 0 auto;
+            max-width: 1500px;
+            .rewiew-card__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 40px;
+                .rewiew-card__title {
+                    font-family: 'RoadRadio';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 42px;
+                    line-height: 42px;
+                }
+                .rewiew-card__mark {
+                    display: flex;
+                    align-items: flex-start;
+                    .rating__stars {
+                        svg {
+                            &:not(:last-child) {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    p {
+                        font-family: 'RoadRadio';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 36px;
+                        margin-right: 20px;
+                    }
+                    .rating__link {
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 140%;
+                        /* or 22px */
+                        cursor: pointer;
+                        letter-spacing: 0.04em;
+                        text-decoration-line: underline;
+                        
+                        color: #003366;
+                        
+                    }   
+                }
+            }
+            .rewiew-card__content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}

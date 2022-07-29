@@ -1,0 +1,244 @@
+.Header {
+    background-color: #0C1217;
+    position: relative;
+
+    .Header__container {
+        padding: 16px 21px 25px 21px;
+
+        .Header__content {
+            display: flex;
+            align-items: center;
+
+            .menu {
+                display: flex;
+                flex: 1 1 auto;
+                margin-left: 115px;
+
+                .active-item-menu {
+                    color: #cf2e2e !important;
+                    transition: 1s;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        background-color: #cf2e2e ;
+                        bottom: -8px;
+                    }
+
+                }
+
+                .menu__item {
+                    font-size: 14px;
+                    color: white;
+                    cursor: pointer;
+                    transition: 1s;
+
+                    &:not(:last-child) {
+                        margin-right: 40px;
+                    }
+
+                    &:hover {
+                        color: #cf2e2e;
+                        transition: 1s;
+                    }
+                }
+            }
+
+            .buttons-header {
+                display: flex;
+
+                .buttons-header__item {
+                    color: white;
+                    font-size: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &:not(:last-child) {
+                        margin-right: 30px;
+                    }
+
+                    img {
+                        width: 20px;
+                        margin-bottom: 6px;
+                    }
+
+                    // display: flex;
+                    // flex-direction: column;
+                }
+            }
+        }
+
+        .menu-full {
+            position: absolute;
+            background: #0C1217;
+            width: 100%;
+            left: 0;
+            padding: 50px 0;
+            z-index: 5;
+            display: flex;
+            transition: 2s;
+            animation: top-bottom .5s;
+            top: 92px;
+            .menu-full__container {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+            }
+            a {
+                display: block;
+            }
+
+            p , a{
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+                cursor: pointer;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+            }
+
+            .menu-full__action {
+                padding: 30px 71px 30px 30px;
+                background: #2A2833;
+
+                .action-full__title {
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.06em;
+                    text-transform: uppercase;
+                    max-width: 145px;
+                    color: #FFFFFF;
+                    margin-bottom: 52px;
+
+                }
+
+                .action-full__subtitle {
+                    cursor: pointer;
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 140%;
+                    /* or 22px */
+                    text-transform: none;
+                    letter-spacing: 0.04em;
+                    text-decoration-line: underline;
+
+                    color: #929292;
+                }
+            }
+
+            .menu-full__catalog {
+                margin-left: 50px;
+
+                .catalog-full__title {
+                    margin-bottom: 15px;
+                }
+
+                .catalog-full__series {
+                    display: grid;
+                    max-width: 240px;
+                    grid-template-columns: 1fr 1fr;
+                    margin-bottom: 30px;
+
+                    p ,a{
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        /* identical to box height */
+                        letter-spacing: 0.04em;
+                        color: #777777;
+                        margin-top: 10px;
+
+                    }
+
+                }
+            }
+
+            .menu-full__base {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-left: 350px;
+
+                p ,a{
+                    margin-top: 20px;
+                }
+
+            }
+
+            .menu-full__support {
+                margin-left: 460px;
+
+                p,a {
+                    margin-top: 20px;
+                }
+            }
+
+            .menu-full__warranty {
+                margin-left: 580px;
+
+                p,a {
+                    margin-top: 20px;
+                }
+            }
+
+        }
+    }
+}
+
+.Subheader {
+    background: #1D242A;
+
+    .Subheader__container {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+
+        .menu-sub {
+            display: flex;
+            flex: 1 1 auto;
+            justify-content: center;
+
+            .menu-sub__item {
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:not(:last-child) {
+                    margin-right: 90px;
+                }
+            }
+        }
+
+        .subheader__number {
+            font-size: 14px;
+            text-decoration: underline;
+        }
+    }
+}
+
+@keyframes top-bottom {
+    0% {
+        top: 0;
+        filter: opacity(50%);
+    }
+
+    100% {
+        top: 57px;
+    }
+}

@@ -1,0 +1,83 @@
+.BasketProduct {
+    height: 144px;
+    background: #F8F8F8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 0 30px;
+    .BasketProduct__images {
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 20px;
+        }
+        .BasketProduct__info {
+            .BasketProduct__name {
+                font-family: 'RoadRadio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 130%;
+                margin-bottom: 5px;
+            }
+            .BasketProduct__subtitle {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                /* or 22px */
+                
+                letter-spacing: 0.04em;
+            }
+        }
+    }
+    .BasketProduct__buy {
+        display: flex;
+        align-items: center;
+        .buy-count {
+            display: flex;
+            height: 44px;
+            background: #FFFFFF;
+            border: 1px solid #C4C4C4;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 33px;
+            width: 146px;
+            div {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // padding: 5px 15px;
+                width: 146px;
+                &:not(:last-child) {
+                    border-right: 1px solid #C4C4C4;
+                }
+            }
+        }
+        svg {
+            margin-right: 33px;
+            cursor: pointer;
+        }
+        .buy-price {
+            font-family: 'RoadRadio';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+            margin-right: 30px;
+        }
+        .buy-sale {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 0.04em;
+            color: #717171;
+            text-decoration: line-through;
+        }
+    }
+}

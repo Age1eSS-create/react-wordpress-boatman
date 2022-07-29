@@ -1,0 +1,181 @@
+
+.Main {
+    overflow: hidden;
+}
+
+.categories {
+    background-color: #0C1217;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 110%;
+        height: 226px;
+        background-color: #0C1217;
+        filter: blur(47px);
+        top: -139px;
+        left: -20px;
+    
+    }
+    .categories__container {
+        display: flex;
+        padding: 80px 0 100px 0;
+        justify-content: space-between;
+        
+        .categories__item {
+            background: #1D242A;
+            display: flex;
+            align-items: flex-start;
+            padding: 30px 25px;
+            max-width: 230px;
+            img {
+                width: 30px;
+                margin-right: 20px;
+            }
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 10px;
+                min-height: 57px;
+            }
+            a {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                text-decoration-line: underline;
+                color: #8C8C8C;
+            }
+        }
+    }
+}
+.models {
+    background-color: #fff;
+    color: black;
+    padding-bottom: 100px;
+    .models_container {
+        max-width: 1558px;
+        margin: 0 auto;
+    }
+    .models__title {
+        font-family: 'RoadRadio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 42px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .content-models {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .content-models__item {
+            width: 770px;
+            height: 500px;
+            background: #EEEEEE;
+            display: flex;
+            align-items: end; 
+            margin-bottom: 20px;  
+            position: relative;
+            overflow: hidden;
+            .models-item__info {
+                margin: 30px 20px;
+                z-index: 2;
+                .item-series {
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-bottom: 5px;
+                    /* identical to box height */
+
+                    letter-spacing: 0.04em;
+                }
+                .item-title {
+                    font-family: 'RoadRadio';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 35px;
+                    margin-bottom: 12px;
+                    text-transform: uppercase;
+                }
+                .item-subtitle {
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.02em;
+                    max-width: 275px;
+                    margin-bottom: 25px;
+                }
+                .item-button {
+                    padding: 20px 0px;
+                    border: 1px solid #000000;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 203px;
+                    &:hover {
+                        background-color: #E60013;
+                        color: white;
+                        transition: 1s;
+                        border: 1px solid #E60013;
+                    }
+                }
+            }
+        }
+        .models-item-1 {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 50px;
+                background: url('../../img/cor1.png') no-repeat;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+        }
+        .models-item-2 {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 100px;
+                background: url('../../img/cor2.png') no-repeat;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+        }
+        .models-item-3 {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 50px;
+                background: url('../../img/cor3.png') no-repeat;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+        }
+        .models-item-4 {
+            &::before {
+                content: '';
+                position: absolute;
+                top: -0px;
+                left: 10px;
+                background: url('../../img/cor4.png') no-repeat;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+        }
+    }
+}

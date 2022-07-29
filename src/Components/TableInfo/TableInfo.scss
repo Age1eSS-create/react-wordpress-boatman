@@ -1,0 +1,29 @@
+.TableInfo__row,
+.TableInfo__row-1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  .row__item {
+    // padding: 30px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d242a;
+    font-family: "RoadRadio";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+    min-width: 264px;
+    height: 95px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    .minus {
+      width: 40px;
+      height: 5px;
+      background: #ffffff;
+      border-radius: 4px;
+    }
+  }
+}
